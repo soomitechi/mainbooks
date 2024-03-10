@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+<body>
+<br>
+<div>
+    <a th:href="@{/}"><img src="images/mainbooks_logo.png" title="Mainbooks logo" alt="Mainbooks logo" style="height: 100px; float: left; margin-left: 15px;" /></a>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Mainbooks 📚</h3>
+        </div>
+        <div class="card-body">
+            <form id="formLivro">
+                <p>Seja bem-vindo(a) a Mainbooks. A partir daqui, você poderá visitar a página de registro de
+                    livros e a página de listagem de todos os livros clicando nos
+                    links fornecidos.
+                </p>
+                <a th:href="@{adicionar}" class="btn btn-success ">Adicionar Livro
+                    <i class="fa fa-plus-square" aria-hidden="true" style="margin-left: 5px;"></i>
+                </a>
+                <a th:href="@{livros}" class="btn btn-primary">
+                    Livros
+                    <i class="fa fa-list" aria-hidden="true" style="margin-left: 5px;"></i>
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
